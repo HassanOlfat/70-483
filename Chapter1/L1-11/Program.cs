@@ -8,6 +8,7 @@ namespace L1_11
         {
             Task<int> t = Task.Run(() =>
             {
+               
                 return 42;
             });
 
@@ -18,6 +19,7 @@ namespace L1_11
 
             t.ContinueWith((i) =>
             {
+               
                 Console.WriteLine("Faulted");
             }, TaskContinuationOptions.OnlyOnFaulted);
 
