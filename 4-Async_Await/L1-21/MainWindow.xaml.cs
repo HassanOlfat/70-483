@@ -41,6 +41,7 @@ namespace L1_21
                 byte[] encodedText = Encoding.Unicode.GetBytes(content);
                 sourceStream.WriteAsync(encodedText, 0, encodedText.Length).ConfigureAwait(false);
             };
+           
         }
     }
 }
